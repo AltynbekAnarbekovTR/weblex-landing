@@ -31,17 +31,18 @@ footer {
 }
 
 .about {
-    margin-right: 98px;
+    /* margin-right: 98px; */
 }
 
 .menu {
-    
+    margin-right: 63px;
 }
 
 .menu-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(5, auto);
+    grid-column-gap: 52px;
     grid-row-gap: 10px;
     /* max-width: 408px;
     display: flex;
@@ -74,6 +75,10 @@ footer {
     gap: 12px;
 }
 
+.icon {
+    cursor: pointer;
+}
+
 .address {
     margin-top: 19px;
     font-weight: 400;
@@ -99,4 +104,82 @@ footer {
 
 .underline {
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    footer {
+        margin-top: 45px;
+margin-bottom: 56px;
+    }
+
+    .container {
+        margin: 0 7px!important;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer h4 {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .footer li {
+        
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .footer .menu {
+        margin-top: 30px;
+    }
+
+    .menu li {
+        max-width: 123px;
+    }
+
+    .menu-list {
+        /* grid-column-gap: 48px; */
+    }
+
+    .menu-list li {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .contacts {
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    .contacts h4 {
+/* identical to box height */
+
+letter-spacing: 0.05em;
+text-transform: uppercase;
+    }
+
+    .social {
+        justify-content: left;
+        gap: 10px;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .address {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .copyright {
+        align-items: start;
+    }
 }

@@ -1,12 +1,16 @@
+section {
+    margin-top: 129px;
+    /* padding-bottom: 124px; */
+}
+
 .banner {
-    margin-top: 94px;
-    padding-bottom: 124px;
     display: flex;
     justify-content: space-between;
+    align-items: start;
 }
 
 .left h1 {
-    width: 362px;
+    max-width: 362px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -15,7 +19,7 @@
 }
 
 .left span {
-    width: 247px;
+    max-width: 247px;
     height: 58px;
     left: 147px;
     top: 325px;
@@ -34,7 +38,7 @@
 
 .left p {
     margin-top: 30px;
-    width: 275px;
+    max-width: 275px;
     height: 44px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -44,15 +48,15 @@
 }
 
 .right {
+    padding-top: 18px;
     display: flex;
     flex-direction: column;
-    justify-content: right;
     align-items: end;
     text-align: right;
 }
 
 .right h3 {
-    width: 291px;
+    max-width: 291px;
     height: 44px;
     font-style: normal;
     font-weight: 500;
@@ -78,11 +82,11 @@
     
     height: 166px; */
     margin-top: 40px;
-    width: 330px;
+    /* width: 330px; */
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 31px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    /* grid-column-gap: 31px; */
     grid-row-gap: 30px;
 }
 
@@ -104,7 +108,8 @@
 }
 
 .presents p {
-    margin-top: 9px;
+    max-width: 164px;
+    margin-top: 6px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -116,6 +121,7 @@
 .banner-btn {
     margin-top: 61px;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    
 }
 
 .banner-btn button {
@@ -127,4 +133,109 @@
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+    cursor: pointer;
+}
+
+.banner-btn button:hover {
+    background-color: #618df3;
+}
+
+@media (max-width: 600px) {
+    .banner {
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .banner .left h1 {
+        font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    }
+
+    .banner .left h1 span {
+        display: block;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .banner .left p {
+        margin-top: 15px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+    .right {
+        text-align: left;
+        margin-top: 45px;
+        align-items: start;
+    }
+    
+    .right h3 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: left;
+    }
+
+    .right h3 span {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+
+        /* gradient */
+        letter-spacing: normal;
+        background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: lowercase;
+    }
+
+    .presents {
+        margin-top: 20px;
+        grid-column-gap: 10px;
+        grid-row-gap: 14px;
+    }
+
+    .dash {
+        width: 10px;
+        position: relative;
+        border-bottom: 1px solid #000;
+    }
+
+    .dash::after {
+        position: absolute;
+        top: 7px;
+        background-color: #fff;
+        content: "";
+        height: 2px;
+        left: 0;
+        transition: all .3s linear;
+        width: 10px;
+        z-index: 2;
+    }
+
+    .presents p {
+        display: flex;
+        margin-top: 0;
+        gap: 5px;
+        align-items: center;
+        text-align: left;
+        font-family: 'Montserrat';
+        font-style: normal; 
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        /* identical to box height */
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    
 }
