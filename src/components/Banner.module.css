@@ -1,0 +1,130 @@
+.banner {
+    margin-top: 94px;
+    padding-bottom: 124px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left h1 {
+    width: 362px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.left span {
+    width: 247px;
+    height: 58px;
+    left: 147px;
+    top: 325px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.left p {
+    margin-top: 30px;
+    width: 275px;
+    height: 44px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: end;
+    text-align: right;
+}
+
+.right h3 {
+    width: 291px;
+    height: 44px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+}
+
+.right span {
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.presents {
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 46px;
+    
+    height: 166px; */
+    margin-top: 40px;
+    width: 330px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 31px;
+    grid-row-gap: 30px;
+}
+
+.presents div {
+    
+    text-align: right;
+}
+
+.presents h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.presents p {
+    margin-top: 9px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+}
+
+.banner-btn {
+    margin-top: 61px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+.banner-btn button {
+    padding: 21px 35px;
+    background-color: #4077F3;
+    color: #E4E5EA;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
