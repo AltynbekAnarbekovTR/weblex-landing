@@ -107,9 +107,13 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .mobile-footer {
+        margin: 0 7px;
+    }
+
     footer {
         margin-top: 45px;
-margin-bottom: 56px;
+        margin-bottom: 56px;
     }
 
     .container {
@@ -138,17 +142,17 @@ margin-bottom: 56px;
     }
 
     .menu li {
-        max-width: 123px;
+        
     }
 
     .menu-list {
-        /* grid-column-gap: 48px; */
+        grid-column-gap: 28px;
+        grid-template-columns: max-content max-content;
     }
 
     .menu-list li {
-        font-family: "Inter";
-        font-style: normal;
         font-weight: 400;
+        max-width: 123px;
     }
 
     .contacts {
@@ -159,27 +163,35 @@ margin-bottom: 56px;
     .contacts h4 {
 /* identical to box height */
 
-letter-spacing: 0.05em;
-text-transform: uppercase;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
     }
 
     .social {
+        margin-top: 8px;
         justify-content: left;
         gap: 10px;
     }
+
 
     .icon {
         width: 24px;
         height: 24px;
     }
 
+    .icon img {
+        width: 100%;
+    }
+
     .address {
+        margin-top: 10px;
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
     }
 
     .copyright {
+        margin-top: 50px;
         align-items: start;
     }
 }

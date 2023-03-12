@@ -3,7 +3,7 @@ import styles from "./Banner.module.css";
 import dashImg from "../assets/Dash.png";
 
 const Banner = () => {
-  const isAbove320 = useMediaQuery("(min-width: 321px)");
+  const isAbove320 = useMediaQuery("(min-width: 600px)");
   return (
     <section>
       <div className="container">

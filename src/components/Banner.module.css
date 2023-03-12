@@ -20,7 +20,7 @@ section {
 
 .left span {
     max-width: 247px;
-    height: 58px;
+    /* height: 58px; */
     left: 147px;
     top: 325px;
 
@@ -141,6 +141,10 @@ section {
 }
 
 @media (max-width: 600px) {
+    section {
+        margin-top: 38px;
+    }
+
     .banner {
         flex-direction: column;
         align-items: start;
@@ -172,7 +176,8 @@ section {
 
     .right {
         text-align: left;
-        margin-top: 45px;
+        margin-top: 41px;
+        padding: 0;
         align-items: start;
     }
     

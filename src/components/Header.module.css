@@ -88,9 +88,6 @@ a {
     }
 
     .header-container {
-
-        
-        
     }
 
     .header {
@@ -102,7 +99,7 @@ a {
     }
 
     nav ul {
-        justify-content: space-between;
+        gap: 16px;
     }
 
     nav ul li {
