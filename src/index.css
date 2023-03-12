@@ -58,6 +58,7 @@ code {
   }
 
   body {
-    
+    background-image: none;
+    background-color: #000;
   }
 }
